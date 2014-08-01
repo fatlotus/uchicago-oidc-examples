@@ -17,10 +17,12 @@ If you're not sure where to start, begin with the first.
 In order to run these examples, you will need to register the application at
 the production OpenID Connect server:
 
-1. Visit `https://openidcdev.uchicago.edu`.
+1. Visit [https://openidcdev.uchicago.edu](https://openidcdev.uchicago.edu).
 2. Click on "Self-Service Client Registration."
-3. Enter "`https://localhost:5000`" for the Redirect URI, and click Submit.
-4. Make note of the client ID and secret, and replace the values in config.py.
+3. Enter "https://localhost:5000" for the Redirect URI.
+4. Add "https://localhost:6000/scrabble" to the list of scopes (under "Access"),
+   and click Submit.
+5. Make note of the client ID and secret, and replace the values in config.py.
 
 Next, install the Flask and requests modules. This can be done by running-
 
@@ -34,7 +36,7 @@ $ pip install -r requirements.txt
 $ python basic_client.py
 ```
 
--and visit `http://localhost:5000` in a web browser.
+-and visit [http://localhost:5000](http://localhost:5000) in a web browser.
 
 #### License
 
