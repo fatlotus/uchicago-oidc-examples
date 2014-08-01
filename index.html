@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>UChicago OIDC Examples by fatlotus</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>UChicago OIDC Examples</h1>
+        <p>Reference CNetID-authenticated applications written using OpenID Connect.</p>
+
+        <p class="view"><a href="https://github.com/fatlotus/uchicago-oidc-examples">View the Project on GitHub <small>fatlotus/uchicago-oidc-examples</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/fatlotus/uchicago-oidc-examples/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/fatlotus/uchicago-oidc-examples/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/fatlotus/uchicago-oidc-examples">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a name="openid-connect-example-code" class="anchor" href="#openid-connect-example-code"><span class="octicon octicon-link"></span></a>OpenID Connect Example Code</h3>
+
+<p>This code contains three basic applications, all written in Python, and using
+the excellent Flask microframework. They each advance the following goals:</p>
+
+<ol>
+<li>The <strong>basic application</strong> (<code>basic_client.py</code>) verifies access and displays
+basic profile information;</li>
+<li>The <strong>authorizing application</strong> (<code>api_client.py</code>) verifies access and
+retrieves more information from a campus API; and</li>
+<li>The <strong>authorized API</strong> (<code>api_server.py</code>) verifies access and serves
+data to authorized applications.</li>
+</ol><p>If you're not sure where to start, begin with the first.</p>
+
+<h4>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h4>
+
+<p>In order to run these examples, you will need to register the application at
+the production OpenID Connect server:</p>
+
+<ol>
+<li>Visit <code>https://openidcdev.uchicago.edu</code>.</li>
+<li>Click on "Self-Service Client Registration."</li>
+<li>Enter "<code>https://localhost:5000</code>" for the Redirect URI, and click Submit.</li>
+<li>Make note of the client ID and secret, and replace the values in config.py.</li>
+</ol><p>Next, install the Flask and requests modules. This can be done by running-</p>
+
+<pre><code>$ pip install -r requirements.txt
+</code></pre>
+
+<p>-in a terminal. Finally, launch the application-</p>
+
+<pre><code>$ python basic_client.py
+</code></pre>
+
+<p>-and visit <code>http://localhost:5000</code> in a web browser.</p>
+
+<h4>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h4>
+
+<p>This is free and unencumbered software released into the public domain.</p>
+
+<p>Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.</p>
+
+<p>In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/fatlotus">fatlotus</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
