@@ -5,10 +5,10 @@ the excellent Flask microframework. They each advance the following goals:
 
 1. The **basic application** (`basic_client.py`) verifies access and displays
    basic profile information;
-2. The **authorizing application** (`authorizing_client.py`) verifies access and
+2. The **authorizing application** (`api_client.py`) verifies access and
    retrieves more information from a campus API; and
-3. The **authorized API** (`authorizing_api.py`) verifies access and serves data
-   to authorized applications.
+3. The **authorized API** (`api_server.py`) verifies access and serves
+   data to authorized applications.
 
 If you're not sure where to start, begin with the first.
 
