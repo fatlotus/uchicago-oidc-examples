@@ -35,11 +35,11 @@
 the excellent Flask microframework. They each advance the following goals:</p>
 
 <ol>
-<li>The <strong>basic application</strong> (<code>basic_client.py</code>) verifies access and displays
-basic profile information;</li>
-<li>The <strong>authorizing application</strong> (<code>api_client.py</code>) verifies access and
+<li>The <strong>basic application</strong> (<a href="basic"><code>basic_client.py</code></a>) verifies access and
+displays basic profile information;</li>
+<li>The <strong>authorizing application</strong> (<a href="api"><code>api_client.py</code></a>) verifies access and
 retrieves more information from a campus API; and</li>
-<li>The <strong>authorized API</strong> (<code>api_server.py</code>) verifies access and serves
+<li>The <strong>authorized API</strong> (<a href="server"><code>api_server.py</code></a>) verifies access and serves
 data to authorized applications.</li>
 </ol><p>If you're not sure where to start, begin with the first.</p>
 
@@ -50,9 +50,11 @@ data to authorized applications.</li>
 the production OpenID Connect server:</p>
 
 <ol>
-<li>Visit <code>https://openidcdev.uchicago.edu</code>.</li>
+<li>Visit <a href="https://openidcdev.uchicago.edu">https://openidcdev.uchicago.edu</a>.</li>
 <li>Click on "Self-Service Client Registration."</li>
-<li>Enter "<code>https://localhost:5000</code>" for the Redirect URI, and click Submit.</li>
+<li>Enter "https://localhost:5000" for the Redirect URI.</li>
+<li>Add "https://localhost:6000/scrabble" to the list of scopes (under "Access"),
+and click Submit.</li>
 <li>Make note of the client ID and secret, and replace the values in config.py.</li>
 </ol><p>Next, install the Flask and requests modules. This can be done by running-</p>
 
@@ -64,7 +66,7 @@ the production OpenID Connect server:</p>
 <pre><code>$ python basic_client.py
 </code></pre>
 
-<p>-and visit <code>http://localhost:5000</code> in a web browser.</p>
+<p>-and visit <a href="http://localhost:5000">http://localhost:5000</a> in a web browser.</p>
 
 <h4>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h4>
