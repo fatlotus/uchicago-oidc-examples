@@ -3,12 +3,15 @@
 This code contains three basic applications, all written in Python, and using
 the excellent Flask microframework. They each advance the following goals:
 
-1. The **basic application** (`basic_client.py`) verifies access and displays
-   basic profile information;
-2. The **authorizing application** (`api_client.py`) verifies access and
+1. The **basic application** ([`basic_client.py`][basic]) verifies access and
+   displays basic profile information;
+2. The **authorizing application** ([`api_client.py`][api]) verifies access and
    retrieves more information from a campus API; and
-3. The **authorized API** (`api_server.py`) verifies access and serves
+3. The **authorized API** ([`api_server.py`][server]) verifies access and serves
    data to authorized applications.
+[basic]: https://github.com/fatlotus/uchicago-oidc-examples/blob/master/basic_client.py
+[api]: https://github.com/fatlotus/uchicago-oidc-examples/blob/master/api_client.py
+[server]: https://github.com/fatlotus/uchicago-oidc-examples/blob/master/api_server.py
 
 If you're not sure where to start, begin with the first.
 
